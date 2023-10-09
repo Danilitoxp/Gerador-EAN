@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de Código EAN</title>
+    <title>Gerador de EAN</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/image/favicon.png" type="image/x-icon">
 </head>
 <body>
     <div class="container">
@@ -13,9 +14,9 @@
             <div class="input-field">
                 <label for="gs1">CÓDIGO GS1:</label>
                 <select id="gs1" name="gs1">
-                    <option value="EAN-8">779</option>
-                    <option value="EAN-13">EAN-13</option>
-                    <option value="EAN-14">EAN-14</option>
+                    <option id="brasil" value="EAN-13">779</option>                 
+                    <option id="argentina" value="EAN-13">789</option>
+                    <option id="portugal" value="EAN-14">560</option>
                 </select>
             </div>
             <div class="input-field">

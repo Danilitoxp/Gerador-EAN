@@ -14,7 +14,7 @@
 
 O Gerador de EAN, é um projeto meu com o intuito em ajudar na criação de anuncios, sem a necessidade de comprar novos Codigos EAN
 
-- [Acesse o projeto](https://explorer-danilitoxp.vercel.app/)
+- [Acesse o projeto](https://gerador-ean.vercel.app/)
 
 ## 🚀 Tecnologias
 

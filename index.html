@@ -13,19 +13,21 @@
         <div class="input-group">
             <div class="input-field">
                 <label for="gs1">CÓDIGO GS1</label>
-                <select id="gs1" name="gs1" img>
-                    <option id="brasil" value="EAN-13">779</option>                 
+                <select id="gs1" name="gs1">
+                    <option id="brasil" value="EAN-13">779</option>                
                     <option id="argentina" value="EAN-13">789</option>
                     <option id="portugal" value="EAN-14">560</option>
                 </select>
             </div>
             <div class="input-field">
                 <label for="cnpj">CNPJ DA EMPRESA</label>
-                <input id="cnpj" type="text" name="cnpj" placeholder="Primeiros 5 Digitos">
+                <input id="cnpj" type="text" name="cnpj" placeholder="Primeiros 5 Digitos"
+                required maxlength="5">
             </div>
             <div class="input-field">
                 <label for="codigo8">CÓDIGO DE 8 NÚMEROS</label>
-                <input id="codigo8" type="text" name="codigo8" placeholder="8 Números do Produto">
+                <input id="codigo8" type="text" name="codigo8" placeholder="8 Números do Produto"
+                required minlength="8">
             </div>
         </div>
         

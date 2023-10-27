@@ -1,17 +1,13 @@
 
-document.addEventListener("DOMContentLoaded", function () {
-    const generateButton = document.getElementById("generate");
-    const resultSpan = document.querySelector("#result span");
+lucide.createIcons()
 
-    generateButton.addEventListener("click", function () {
-        const gs1 = document.getElementById("gs1").value;
-        const cnpj = document.getElementById("cnpj").value;
-        const codigo8 = document.getElementById("codigo8").value;
+let select = document.querySelector('.select'),
+selectedValue = document.getElementById('selected-value'),
+optionsViewButton = document.getElementById('options-view-button'),
+inputsOptions = document.querySelectorAll('.option input')
 
-        // Aqui, você pode implementar a lógica para gerar o código EAN com base nos valores dos campos
-        const codigoEAN = gs1 + cnpj + codigo8;
-
-        // Exiba o código EAN gerado no elemento resultSpan
-        resultSpan.textContent = codigoEAN;
-    });
-});
+inputsOptions.forEach(input => {
+    input.addEventListener('click', event => {
+        selectedValue.textContent = input.dataset.label
+    })
+})

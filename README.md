@@ -13,6 +13,7 @@
 ## 💻 Projeto
 
 O Gerador de EAN, é um projeto criado por mim com o intuito de ajudar na criação de anúncios, sem a necessidade de comprar novos Codigos EAN
+Projeto Pessoal
 
 OBS: PROJETO AINDA EM DESENVOLVIMENTO
 

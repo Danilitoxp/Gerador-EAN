@@ -12,12 +12,60 @@
         <h2>Gerador de <span>EAN</span></h2>
         <div class="input-group">
             <div class="input-field">
-                <label for="gs1">CÓDIGO GS1</label>
-                <select id="gs1" name="gs1">
-                    <option id="brasil" value="EAN-13">789</option>                
-                    <option id="argentina" value="EAN-13">789</option>
-                    <option id="portugal" value="EAN-14">560</option>
-                </select>
+                <div class="select">
+                    <div id="category-select">
+                        <label for="options-view-button">CÓDIGO GS1</label>
+                        <input type="checkbox" id="options-view-button">
+
+                        <div id="select-button">
+                            <div id="selected-value">Selecione o GS1</div>
+
+                            <div id="chevrons">
+                                <i data-lucide="chevron-down"></i>
+                                <i data-lucide="chevron-up"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul id="options">
+                        <li class="option">
+                            <input
+                                type="radio"
+                                name="category"
+                                value="bakery"
+                                data-label="Brasil"
+                            >
+
+                            <i data-lucide="sandwich"></i>
+                            <span class="label">Brasil</span>
+                            <i data-lucide="check"></i>
+                        </li>
+                        <li class="option">
+                            <input
+                                type="radio"
+                                name="category"
+                                value="bakery"
+                                data-label="Portugal"
+                            >
+
+                            <i data-lucide="sandwich"></i>
+                            <span class="label">Portugal</span>
+                            <i data-lucide="check"></i>
+                        </li>
+                        <li class="option">
+                            <input
+                                type="radio"
+                                name="category"
+                                value="bakery"
+                                data-label="Argentina"
+                            >
+
+                            <i data-lucide="sandwich"></i>
+                            <span class="label">Argentina</span>
+                            <i data-lucide="check"></i>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="input-field">
                 <label for="cnpj">CNPJ DA EMPRESA</label>
@@ -39,6 +87,7 @@
             </span>
         </div>
     </div>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
